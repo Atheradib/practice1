@@ -7,10 +7,8 @@ function App() {
   return (
     <div className="App">
       <HeaderSection/>
-      <hr style={{color:"black"}} />
-      <Body/>
-      
-     
+      <hr/>
+      <Body/> 
     </div>
   );
 }
