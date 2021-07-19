@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import { Practice } from "./Components/Practice";
+import {HeaderSection } from "./Components/A_HeaderSection/HeaderSection"
+import { Body } from "./Components/B_BodySection/Body"
 
 function App() {
   return (
     <div className="App">
-      <Practice/>
+      <HeaderSection/>
+      <hr style={{color:"black"}} />
+      <Body/>
+      
      
     </div>
   );
