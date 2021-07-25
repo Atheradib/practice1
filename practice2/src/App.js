@@ -1,15 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import {HeaderSection } from "./Components/A_HeaderSection/HeaderSection"
-import { Body } from "./Components/B_BodySection/Body"
+import { Courses } from './Components/Courses';
 
 function App() {
-  return (
-    <div className="App">
-      <HeaderSection/>
-      <hr/>
-      <Body/> 
-    </div>
+  return ( <Courses />
   );
 }
 
