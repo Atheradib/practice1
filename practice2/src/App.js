@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-// import { Courses } from './Components/Courses';
-import {Counter} from "./Components/Counter";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "./logo.svg";
+import "./App.css";
+import { Dictionary } from "./Components/Dictionary/Dictionary";
 
 function App() {
-  // return ( <Courses />
-  return (<Counter />
+  return (
+    <div className="App">
+      <Dictionary />
+    </div>
   );
 }
 
