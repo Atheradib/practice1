@@ -8,6 +8,7 @@ export const MeaningList = ({ item }) => {
     <div>
       <Card className="meaning">
         <h4>{item.word}</h4>
+
         {item.meanings.map((m) => (
           <Meaning m={m} />
         ))}
