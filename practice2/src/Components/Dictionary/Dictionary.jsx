@@ -6,6 +6,7 @@ import { Synonyms } from "./Synonyms/Synonyms";
 import axios from "axios";
 import { MeaningList } from "./Meaning/MeaningList";
 import { Pronunciation } from "./Pronunciation/Pronunciation";
+import { Antonyms } from "./Synonyms/Antonyms";
 
 export const Dictionary = () => {
   const [resData, setResData] = useState([]);
@@ -58,6 +59,9 @@ export const Dictionary = () => {
           <Col md={4}>
             {resData.length > 0 && (
               <Synonyms sData={resData[0].meanings[0].definitions[0]} />
+            )}
+            {resData.length > 0 && (
+              <Antonyms aData={resData[0].meanings[0].definitions[0]} />
             )}
           </Col>
           <Col md={1}></Col>

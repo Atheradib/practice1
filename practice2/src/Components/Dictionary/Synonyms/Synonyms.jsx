@@ -10,8 +10,8 @@ export const Synonyms = ({ sData }) => {
           <Col>
             <h4>Synonyms:</h4>
 
-            {sData.synonyms.map((currentval, index, array) => (
-              <p>{index + 1 + "." + " " + currentval}</p>
+            {sData.synonyms.map((syno, index) => (
+              <p>{index + 1 + "." + " " + syno}</p>
             ))}
 
             {console.log(sData.synonyms[5])}
