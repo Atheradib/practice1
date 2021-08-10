@@ -11,17 +11,8 @@ export const Synonyms = ({ sData }) => {
             <h4>Synonyms:</h4>
 
             {sData.synonyms.map((syno, index) => (
-              <p>{index + 1 + "." + " " + syno}</p>
+              <>{index + 1 + ". " + syno}</>
             ))}
-
-            {console.log(sData.synonyms[5])}
-            <p>
-              {/* {sData[0].synonyms.map((syn, index) => (
-                <>
-                  {index + 1}.{syn.synonyms}
-                </>
-              ))} */}
-            </p>
           </Col>
         </Row>
       </Card>

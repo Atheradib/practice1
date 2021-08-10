@@ -16,7 +16,6 @@ export const Dictionary = () => {
       axios
         .get(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${wordSearch}`)
         .then((res) => {
-          console.log(res.data);
           setResData([...res.data]);
         });
     }
