@@ -1,13 +1,15 @@
-import logo from "./logo.svg";
+import { Provider } from "react-redux";
+import { configStore } from "./Components/ESupermarket/store/configStore";
 import "./App.css";
-import { Home } from "./Components/To_Do_List/Home";
-// import { Dictionary } from "./Components/Dictionary/Dictionary";
+import { Home } from "./Components/ESupermarket/Home";
 
 function App() {
+  const localStore = configStore();
   return (
     <div className="App">
-      {/* <Dictionary /> */}
-      <Home />
+      <Provider store={localStore}>
+        <Home />
+      </Provider>
     </div>
   );
 }
