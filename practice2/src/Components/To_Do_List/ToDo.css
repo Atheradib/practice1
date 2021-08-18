@@ -1,0 +1,33 @@
+.home{
+    background-color: aqua !important;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 0 5px black;
+    border-radius: 15px;
+}
+.todolist{
+    background-color: indianred !important;
+    margin: 10px;
+    padding: 10px;
+    color: white !important;
+    font-size: large;
+    box-shadow: 0 0 5px black;
+    border-radius: 25px;
+
+}
+.addtodo{
+    background-color: indianred !important;
+    margin: 10px;
+    padding: 10px;
+    color: white !important;
+    font-size: large;
+    box-shadow: 0 0 5px black;
+    border-radius: 25px;
+}
+.todoitem{
+    background-color: teal !important;
+    margin: 5px;
+    box-shadow: 0 0 5px black;
+    border-radius: 20px;
+    
+}
