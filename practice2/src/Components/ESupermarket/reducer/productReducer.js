@@ -2,14 +2,14 @@ export const productReducer = (state = { product: ["Nike Shoes"] }, action) => {
   if (action.type === "ADD_PRODUCT") {
     return {
       ...state,
-      product: [...action.data, ...state.product],
+      product: [...action.data],
     };
   }
   if (action.type === "REMOVE_PRODUCT") {
-    state.product.pop();
+    const newData = state.product.filter((item) => item !== action.data);
     return {
-      //   ...state,
-      product: state.product,
+      ...state,
+      product: newData,
     };
   }
   return state;

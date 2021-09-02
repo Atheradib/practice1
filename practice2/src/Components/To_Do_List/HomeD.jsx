@@ -4,11 +4,12 @@ import { AddToDo } from "./AddTODo";
 import { Row, Col, Card } from "react-bootstrap";
 import "./ToDo.css";
 
-export const Home = () => {
+export const HomeD = () => {
   const [todoitems, setTodoitems] = useState([]);
   const handleAdd = (newtodo) => {
     setTodoitems([...todoitems, newtodo]);
   };
+
   return (
     <Card className="home">
       <Row>

@@ -7,7 +7,7 @@ export const ToDoItem = ({ item }) => {
     <Card className="todoitem">
       <Row>
         <Col md={2}>
-          <Form.Check onClick={(e) => setCheck(!check)}></Form.Check>
+          <Form.Check onClick={() => setCheck(!check)}></Form.Check>
         </Col>
         <Col md={10}>
           <Form.Label>{check ? <del>{item}</del> : item}</Form.Label>
